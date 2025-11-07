@@ -7,7 +7,7 @@ system used internally for the generation of all logs..
 ## How to configure logging?
 
 Audit events are by default stored into the Gerrit error_log under the appender
-`com.googlesource.gerrit.plugins.auditsl4j.LoggerAudit`. However, it is possible
+`com.gerritforge.gerrit.plugins.auditsl4j.LoggerAudit`. However, it is possible
 to generate a separate audit file and having the audit records formatted into
 CSV or JSON.
 
