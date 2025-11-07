@@ -18,6 +18,24 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "36c2c5ec_018bb1b9",
+        "filename": "src/main/java/com/gerritforge/gerrit/plugins/auditsl4j/logsource/HTTPLog.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2025-11-07T18:16:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f9201ba9_8c646e08",
+      "revId": "b1890ab08b7e2b7bf30ae45f84d294eda201bacd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "829147d1_a70b79f4",
@@ -31,6 +49,24 @@
       "writtenOn": "2025-11-07T18:14:55Z",
       "side": 1,
       "message": "nit: unrelated change?",
+      "revId": "b1890ab08b7e2b7bf30ae45f84d294eda201bacd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "714c2ab5_7367457a",
+        "filename": "src/main/java/com/gerritforge/gerrit/plugins/auditsl4j/logsource/SSHLog.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2025-11-07T18:16:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "829147d1_a70b79f4",
       "revId": "b1890ab08b7e2b7bf30ae45f84d294eda201bacd",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
@@ -58,6 +94,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba74c306_7bb7a2bc",
+        "filename": "src/test/java/com/gerritforge/gerrit/plugins/auditsl4j/logsource/HttpLogTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2025-11-07T18:16:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a60fe687_7ab01f50",
+      "range": {
+        "startLine": 86,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 33
+      },
+      "revId": "b1890ab08b7e2b7bf30ae45f84d294eda201bacd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8163b71f_073f8be7",
@@ -71,6 +131,30 @@
       "writtenOn": "2025-11-07T18:14:55Z",
       "side": 1,
       "message": "nit: unrelated change",
+      "range": {
+        "startLine": 100,
+        "startChar": 0,
+        "endLine": 102,
+        "endChar": 60
+      },
+      "revId": "b1890ab08b7e2b7bf30ae45f84d294eda201bacd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fafcc31c_e113ca54",
+        "filename": "src/test/java/com/gerritforge/gerrit/plugins/auditsl4j/logsource/HttpLogTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2025-11-07T18:16:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8163b71f_073f8be7",
       "range": {
         "startLine": 100,
         "startChar": 0,
