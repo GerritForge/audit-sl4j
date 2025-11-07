@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9201ba9_8c646e08",
+        "filename": "src/main/java/com/gerritforge/gerrit/plugins/auditsl4j/logsource/HTTPLog.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1020677
+      },
+      "writtenOn": "2025-11-07T18:14:55Z",
+      "side": 1,
+      "message": "nit: Unrelated change?",
+      "revId": "b1890ab08b7e2b7bf30ae45f84d294eda201bacd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "829147d1_a70b79f4",
+        "filename": "src/main/java/com/gerritforge/gerrit/plugins/auditsl4j/logsource/SSHLog.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1020677
+      },
+      "writtenOn": "2025-11-07T18:14:55Z",
+      "side": 1,
+      "message": "nit: unrelated change?",
+      "revId": "b1890ab08b7e2b7bf30ae45f84d294eda201bacd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a60fe687_7ab01f50",
+        "filename": "src/test/java/com/gerritforge/gerrit/plugins/auditsl4j/logsource/HttpLogTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1020677
+      },
+      "writtenOn": "2025-11-07T18:14:55Z",
+      "side": 1,
+      "message": "nit: unrelated change",
+      "range": {
+        "startLine": 86,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 33
+      },
+      "revId": "b1890ab08b7e2b7bf30ae45f84d294eda201bacd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8163b71f_073f8be7",
+        "filename": "src/test/java/com/gerritforge/gerrit/plugins/auditsl4j/logsource/HttpLogTest.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1020677
+      },
+      "writtenOn": "2025-11-07T18:14:55Z",
+      "side": 1,
+      "message": "nit: unrelated change",
+      "range": {
+        "startLine": 100,
+        "startChar": 0,
+        "endLine": 102,
+        "endChar": 60
+      },
+      "revId": "b1890ab08b7e2b7bf30ae45f84d294eda201bacd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
