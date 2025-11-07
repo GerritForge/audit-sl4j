@@ -45,6 +45,30 @@
       },
       "revId": "6bbe1f3cd7396591ca8a197359b5211b5eb96f6e",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "492f4b21_a64f0758",
+        "filename": "src/main/java/com/gerritforge/gerrit/plugins/auditsl4j/logsource/SSHLog.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1012541
+      },
+      "writtenOn": "2025-11-07T18:43:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "47f05a5d_08dc22bd",
+      "range": {
+        "startLine": 68,
+        "startChar": 0,
+        "endLine": 68,
+        "endChar": 131
+      },
+      "revId": "6bbe1f3cd7396591ca8a197359b5211b5eb96f6e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
