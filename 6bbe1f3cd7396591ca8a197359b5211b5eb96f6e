@@ -24,6 +24,30 @@
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3793225_1ffded49",
+        "filename": "BUILD",
+        "patchSetId": 7
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2025-11-08T08:13:35Z",
+      "side": 1,
+      "message": "Yes we did 😉",
+      "parentUuid": "90da9a5a_1726282c",
+      "range": {
+        "startLine": 18,
+        "startChar": 8,
+        "endLine": 18,
+        "endChar": 72
+      },
+      "revId": "6bbe1f3cd7396591ca8a197359b5211b5eb96f6e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "47f05a5d_08dc22bd",
