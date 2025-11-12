@@ -4,6 +4,17 @@ Plug into the Gerrit Code Review audit extension and format and forward all
 the events to an [SLF4J appender](https://www.slf4j.org), the same logging
 system used internally for the generation of all logs..
 
+## License
+
+This project is licensed under the **Business Source License 1.1** (BSL 1.1).
+This is a "source-available" license that balances free, open-source-style access to the code
+with temporary commercial restrictions.
+
+* The full text of the BSL 1.1 is available in the [LICENSE.md](LICENSE.md) file in this
+  repository.
+* If your intended use case falls outside the **Additional Use Grant** and you require a
+  commercial license, please contact [GerritForge Sales](https://gerritforge.com/contact).
+
 ## How to configure logging?
 
 Audit events are by default stored into the Gerrit error_log under the appender
