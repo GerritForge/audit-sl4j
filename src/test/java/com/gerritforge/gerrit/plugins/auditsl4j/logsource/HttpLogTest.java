@@ -83,7 +83,12 @@ public class HttpLogTest {
   @Test
   public void handleIPV6ParseHttpLog() {
     String logLine =
-        "2405:204:a313:675::17a:b0b1 - - [19/Jan/2019:18:15:02 +0000] \"GET /plugins/codemirror-editor/static/codemirror_editor.js HTTP/1.1\" 200 1498 \"https://gerrithub.io/plugins/codemirror-editor/static/codemirror_editor.html\" \"Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko; googleweblight) Chrome/38.0.1025.166 Mobile Safari/535.19\"";
+        "2405:204:a313:675::17a:b0b1 - - [19/Jan/2019:18:15:02 +0000] \"GET"
+            + " /plugins/codemirror-editor/static/codemirror_editor.js HTTP/1.1\" 200 1498"
+            + " \"https://gerrithub.io/plugins/codemirror-editor/static/codemirror_editor.html\""
+            + " \"Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D)"
+            + " AppleWebKit/535.19 (KHTML, like Gecko; googleweblight) Chrome/38.0.1025.166 Mobile"
+            + " Safari/535.19\"";
     Optional<HTTPLog> maybeHTTPLog = HTTPLog.createFromLog(logLine);
     assertTrue("Didn't create HTTPLog", maybeHTTPLog.isPresent());
     assertEquals("2405:204:a313:675::17a:b0b1", maybeHTTPLog.get().getIp());
@@ -92,7 +97,9 @@ public class HttpLogTest {
   @Test(expected = Test.None.class /* no exception expected */)
   public void handleNonNumericalContentLengthParseHttpLog() {
     String logLine =
-        "171.13.14.52 - - [19/Jan/2019:00:00:46 +0000] \"HEAD /Documentation/index.html HTTP/1.1\" 200 - - \"Mozilla/5.0 (Windows NT 10.0 WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36\"";
+        "171.13.14.52 - - [19/Jan/2019:00:00:46 +0000] \"HEAD /Documentation/index.html HTTP/1.1\""
+            + " 200 - - \"Mozilla/5.0 (Windows NT 10.0 WOW64) AppleWebKit/537.36 (KHTML, like"
+            + " Gecko) Chrome/70.0.3538.77 Safari/537.36\"";
     HTTPLog.createFromLog(logLine);
   }
 

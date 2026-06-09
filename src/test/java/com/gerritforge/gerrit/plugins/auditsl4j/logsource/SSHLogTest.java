@@ -62,11 +62,14 @@ public class SSHLogTest {
   @Test
   public void successfullyParseSshLogWithParameters() {
     String logLine =
-        "[2019-01-20 00:20:24,277 +0000] e4e82e5e spdk-bot a/1011203 gerrit.query.--format.json.--current-patch-set.status:open project:spdk/spdk.github.io label:Verified=0 NOT is:draft 1ms 1ms 0";
+        "[2019-01-20 00:20:24,277 +0000] e4e82e5e spdk-bot a/1011203"
+            + " gerrit.query.--format.json.--current-patch-set.status:open"
+            + " project:spdk/spdk.github.io label:Verified=0 NOT is:draft 1ms 1ms 0";
     Optional<SSHLog> maybeSshLog = SSHLog.createFromLog(logLine);
     assertTrue("Didn't create SSHLog", maybeSshLog.isPresent());
     assertEquals(
-        "gerrit.query.--format.json.--current-patch-set.status:open project:spdk/spdk.github.io label:Verified=0 NOT is:draft",
+        "gerrit.query.--format.json.--current-patch-set.status:open project:spdk/spdk.github.io"
+            + " label:Verified=0 NOT is:draft",
         maybeSshLog.get().getCommand());
     assertEquals("0", maybeSshLog.get().getResult());
   }
@@ -93,7 +96,8 @@ public class SSHLogTest {
   @Test
   public void handleNonAuthCommandWithoutTiming() {
     String logLine =
-        "[2018-09-22 15:44:30,539 +0000] ce2a2263 vogella-jenkins a/1012807 gerrit.review.426428,1.--message.Build Failed";
+        "[2018-09-22 15:44:30,539 +0000] ce2a2263 vogella-jenkins a/1012807"
+            + " gerrit.review.426428,1.--message.Build Failed";
     Optional<SSHLog> maybeSshLog = SSHLog.createFromLog(logLine);
     assertTrue("Didn't create SSHLog", maybeSshLog.isPresent());
     assertEquals("gerrit.review.426428,1.--message.Build Failed", maybeSshLog.get().getCommand());
@@ -103,11 +107,16 @@ public class SSHLogTest {
   @Test
   public void handleCommandWithMultiSpaces() {
     String logLine =
-        "[2018-09-22 16:28:30,668 +0000] 61e0f7b9 vogella-jenkins a/1012807 gerrit.review.426428,2.--message.Build Started http://build.vogella.com:8080/job/learn.vogella.com-Gerrit/1323/ .--verified.0.--code-review.0 1ms 303ms 0";
+        "[2018-09-22 16:28:30,668 +0000] 61e0f7b9 vogella-jenkins a/1012807"
+            + " gerrit.review.426428,2.--message.Build Started"
+            + " http://build.vogella.com:8080/job/learn.vogella.com-Gerrit/1323/"
+            + " .--verified.0.--code-review.0 1ms 303ms 0";
     Optional<SSHLog> maybeSshLog = SSHLog.createFromLog(logLine);
     assertTrue("Didn't create SSHLog", maybeSshLog.isPresent());
     assertEquals(
-        "gerrit.review.426428,2.--message.Build Started http://build.vogella.com:8080/job/learn.vogella.com-Gerrit/1323/ .--verified.0.--code-review.0",
+        "gerrit.review.426428,2.--message.Build Started"
+            + " http://build.vogella.com:8080/job/learn.vogella.com-Gerrit/1323/"
+            + " .--verified.0.--code-review.0",
         maybeSshLog.get().getCommand());
     assertEquals("0", maybeSshLog.get().getResult());
   }

@@ -20,6 +20,7 @@ public class SshModule extends PluginCommandModule {
   SshModule(@PluginName String pluginName) {
     super(pluginName);
   }
+
   @Override
   protected void configureCommands() {
     command(TransformLogsCommand.class);
