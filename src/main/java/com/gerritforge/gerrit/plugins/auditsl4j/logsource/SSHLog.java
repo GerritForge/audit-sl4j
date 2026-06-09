@@ -65,7 +65,8 @@ public class SSHLog implements TransformableLog {
 
     Matcher authFailure =
         Pattern.compile(
-                "^\\[(?<timestamp>.*?)\\]\\s(?<session>.*?)\\s(?<user>.*?)\\s(?<command>AUTH FAILURE)(:?\\sFROM.*?)?$")
+                "^\\[(?<timestamp>.*?)\\]\\s(?<session>.*?)\\s(?<user>.*?)\\s(?<command>AUTH"
+                    + " FAILURE)(:?\\sFROM.*?)?$")
             .matcher(line);
 
     Matcher nonAuthCommand =

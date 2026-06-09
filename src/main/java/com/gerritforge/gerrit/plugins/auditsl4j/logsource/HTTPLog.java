@@ -69,8 +69,7 @@ public class HTTPLog implements TransformableLog {
     // "Apache-HttpClient/4.5.3 (Java/1.8.0_191)"
     Matcher a =
         Pattern.compile(
-                "^(?<ip>.*?)\\s-\\s(?<user>.*?)\\s\\["
-                    + "(?<timestamp>.*?)\\]\\s\""
+                "^(?<ip>.*?)\\s-\\s(?<user>.*?)\\s\\[(?<timestamp>.*?)\\]\\s\""
                     + "(?<method>\\w+)\\s(?<resource>.*?)\\s(?<protocol>.*?)\"\\s"
                     + "(?<status>\\d+)\\s(?<contentLength>\\d+|-)\\s(?<referrer>.*?)\\s(?<userAgent>.*?)$")
             .matcher(line);

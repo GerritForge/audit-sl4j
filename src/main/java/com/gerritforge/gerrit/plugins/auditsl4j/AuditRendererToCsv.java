@@ -91,7 +91,8 @@ public class AuditRendererToCsv implements AuditFormatRenderer {
   @Override
   public Optional<String> headers() {
     return Optional.of(
-        "EventId | EventTS | SessionId | User | Protocol data | Action | Parameters | Result | StartTS | Elapsed");
+        "EventId | EventTS | SessionId | User | Protocol data | Action | Parameters | Result |"
+            + " StartTS | Elapsed");
   }
 
   private Object getFormattedAuditList(Multimap<String, ?> params) {
