@@ -16,6 +16,24 @@
       "message": "Unrelated change.",
       "revId": "1b11153d98704ff9917888340fa5b6117079d322",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "808ebc88_dc15908f",
+        "filename": "BUILD",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2026-07-06T07:33:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b3832bbe_4e0f7565",
+      "revId": "1b11153d98704ff9917888340fa5b6117079d322",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
