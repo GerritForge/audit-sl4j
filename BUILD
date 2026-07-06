@@ -14,11 +14,13 @@ gerrit_plugin(
         "Gerrit-PluginName: audit-sl4j",
         "Gerrit-ReloadMode: reload",
         "Gerrit-Module: com.gerritforge.gerrit.plugins.auditsl4j.Module",
+        "Gerrit-HttpModule: com.gerritforge.gerrit.plugins.bsl.HttpModule",
         "Gerrit-SshModule: com.gerritforge.gerrit.plugins.auditsl4j.SshModule",
         "Implementation-Title: Gerrit Audit provider for SLF4J",
         "Implementation-URL: https://github.com/GerritForge/audit-sl4j",
     ],
     resources = glob(["src/main/resources/**/*"]),
+    deps = ["//plugins/gerrit-bsl-license"],
 )
 
 gerrit_plugin_tests(
